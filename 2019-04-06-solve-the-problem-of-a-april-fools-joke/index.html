@@ -109,7 +109,7 @@
 <meta property="og:description" content="The following picture is posted on v2ex (An online community of developers and designers in China^1.) The post title is “Seeking Marriage”. This post is posted on April 1st, so most reactions of this">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNc79ly1g1tpdp6npxj30m80cigmg.jpg">
-<meta property="og:updated_time" content="2019-04-07T04:48:05.817Z">
+<meta property="og:updated_time" content="2019-04-07T05:03:02.999Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Solve the Problem of a April Fool&#39;s Joke">
 <meta name="twitter:description" content="The following picture is posted on v2ex (An online community of developers and designers in China^1.) The post title is “Seeking Marriage”. This post is posted on April 1st, so most reactions of this">
@@ -404,7 +404,7 @@
                 
               
 
-              <time title="Post created:2019-04-06 14:35:05 / Post modified:21:48:05" itemprop="dateCreated datePublished" datetime="2019-04-06T14:35:05-07:00">2019-04-06</time>
+              <time title="Post created:2019-04-06 14:35:05 / Post modified:22:03:02" itemprop="dateCreated datePublished" datetime="2019-04-06T14:35:05-07:00">2019-04-06</time>
             
 
             
@@ -478,9 +478,10 @@
 <p><img src="https://ws2.sinaimg.cn/large/006tNc79ly1g1tpdp6npxj30m80cigmg.jpg" alt="It's a trap" width="400"></p>
 <p>Here is the translation.  “I am born and raised in Hangzhou. I am a science student at Zhejiang University … I hope to find a man can pass the following test. <strong>My Wechat ID is my Family name Lin followed with two prime number. The smaller prime number is in the front. The product of these two prime numbers 7140229933.</strong> If you can find my Wechat ID, I will sincerely date you. Bula bula bula … “</p>
 <p>Disregard if it is a joke, I think the question is interesting. So let’s solve it.<br>The idea is using Exhaustive Method (Brute Force Method) to find two prime factors. We can calculate all possible prime and use 7,140,229,933 divide them all, if the mod is equal to 0 then we got both prime numbers. However, 7,140,229,933 is a relatively large number. To find all prime number could take a long time. Since 7,140,229,933 is the product of two prime, one of the numbers must smaller than the <strong>Square Root</strong> of it. Therefore the order of magnitude of range could reduce from $10^9$ to $10^4$.<br>Here is my solution.</p>
-<a id="more"></a>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line">start = time.time()</span><br><span class="line"></span><br><span class="line"><span class="comment"># The input number</span></span><br><span class="line">input = <span class="number">7140229933</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Function of checking wether a numner is a prime number</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">if_pre</span><span class="params">(n)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">2</span>,n):</span><br><span class="line">        <span class="keyword">if</span> n%i == <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">False</span></span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="comment"># Here 'else' and 'for' are in same level. Therefore,</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">True</span></span><br><span class="line"><span class="comment"># Get a list of the possibile prime smaller than the Square Root of the input number</span></span><br><span class="line">x_list = []           </span><br><span class="line"><span class="keyword">for</span> x <span class="keyword">in</span> range (<span class="number">2</span>,round(input**(<span class="number">0.5</span>))):</span><br><span class="line">    <span class="keyword">if</span> if_pre(x) == <span class="keyword">True</span>:</span><br><span class="line">        x_list.append(x)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Find the other factor</span></span><br><span class="line"><span class="keyword">for</span> x <span class="keyword">in</span> x_list:</span><br><span class="line">    <span class="keyword">if</span> input%x ==<span class="number">0</span>:</span><br><span class="line">        print(x)</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">print(input / <span class="number">83777</span>)</span><br><span class="line"></span><br><span class="line">end = time.time()</span><br><span class="line">print(<span class="string">'Total Time: &#123;&#125;s.'</span>.format(end - start))</span><br></pre></td></tr></table></figure>
 <p>Output:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">83777</span></span><br><span class="line"><span class="number">85229.0</span></span><br><span class="line">Total Time: <span class="number">34.96000599861145</span>s</span><br></pre></td></tr></table></figure></p>
+<p>So the two prime number are 83777 and 85229. There is many way to improve the speed, such as using multiprocessing module. I’ll update answer later.</p>
+<a id="more"></a>
 
       
     </div>
@@ -677,6 +678,10 @@
                 <div class="site-state-item site-state-tags">
                   
                     
+                      <a href="/tags/">
+                    
+                  
+                    
                     
                       
                     
@@ -686,7 +691,7 @@
                     
                     <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">tags</span>
-                  
+                  </a>
                 </div>
               
             </nav>
