@@ -100,20 +100,27 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Johnny&#39;s">
-<meta property="og:url" content="http://j84lee.github.io/index.html">
+  <meta name="description" content="The following picture is posted on v2ex (An online community of developers and designers in China^1.) The post title is “Seeking Marriage”. This post is posted on April 1st, so most reactions of this">
+<meta name="keywords" content="python,Algorithms,Coding Challenge">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Solve the Problem of a April Fool&#39;s Joke">
+<meta property="og:url" content="http://j84lee.github.io/2019-04-06-solve-the-problem-of-a-april-fools-joke/index.html">
 <meta property="og:site_name" content="Johnny&#39;s">
+<meta property="og:description" content="The following picture is posted on v2ex (An online community of developers and designers in China^1.) The post title is “Seeking Marriage”. This post is posted on April 1st, so most reactions of this">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNc79ly1g1tpdp6npxj30m80cigmg.jpg">
+<meta property="og:updated_time" content="2019-04-07T04:48:05.817Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Johnny&#39;s">
+<meta name="twitter:title" content="Solve the Problem of a April Fool&#39;s Joke">
+<meta name="twitter:description" content="The following picture is posted on v2ex (An online community of developers and designers in China^1.) The post title is “Seeking Marriage”. This post is posted on April 1st, so most reactions of this">
+<meta name="twitter:image" content="https://ws2.sinaimg.cn/large/006tNc79ly1g1tpdp6npxj30m80cigmg.jpg">
 
 
 
 
 
 
-  <link rel="canonical" href="http://j84lee.github.io/">
+  <link rel="canonical" href="http://j84lee.github.io/2019-04-06-solve-the-problem-of-a-april-fools-joke/">
 
 
 
@@ -123,7 +130,7 @@
   };
 </script>
 
-  <title>Johnny's</title>
+  <title>Solve the Problem of a April Fool's Joke | Johnny's</title>
   
 
 
@@ -182,8 +189,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -225,7 +231,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -338,9 +344,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -372,10 +378,8 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019-04-06-solve-the-problem-of-a-april-fools-joke/" class="post-title-link" itemprop="url">Solve the Problem of a April Fool's Joke</a>
+          <h1 class="post-title" itemprop="name headline">Solve the Problem of a April Fool's Joke
+
               
             
           </h1>
@@ -470,21 +474,14 @@
       
 
       
-        
-          <p>The following picture is posted on <a href="https://www.v2ex.com/t/550870" target="_blank" rel="noopener">v2ex</a> (An online community of developers and designers in China<a href="https://zh.wikipedia.org/wiki/V2EX" target="_blank" rel="noopener">^1</a>.) The <a href="https://www.v2ex.com/t/550870" target="_blank" rel="noopener">post</a> title is “Seeking Marriage”. This <a href="https://www.v2ex.com/t/550870" target="_blank" rel="noopener">post</a> is posted on April 1st, so most reactions of this post are pointing out that this is the <strong>“new trap” of the recruiters</strong>.</p>
+        <p>The following picture is posted on <a href="https://www.v2ex.com/t/550870" target="_blank" rel="noopener">v2ex</a> (An online community of developers and designers in China<a href="https://zh.wikipedia.org/wiki/V2EX" target="_blank" rel="noopener">^1</a>.) The <a href="https://www.v2ex.com/t/550870" target="_blank" rel="noopener">post</a> title is “Seeking Marriage”. This <a href="https://www.v2ex.com/t/550870" target="_blank" rel="noopener">post</a> is posted on April 1st, so most reactions of this post are pointing out that this is the <strong>“new trap” of the recruiters</strong>.</p>
 <p><img src="https://ws2.sinaimg.cn/large/006tNc79ly1g1tpdp6npxj30m80cigmg.jpg" alt="It's a trap" width="400"></p>
 <p>Here is the translation.  “I am born and raised in Hangzhou. I am a science student at Zhejiang University … I hope to find a man can pass the following test. <strong>My Wechat ID is my Family name Lin followed with two prime number. The smaller prime number is in the front. The product of these two prime numbers 7140229933.</strong> If you can find my Wechat ID, I will sincerely date you. Bula bula bula … “</p>
 <p>Disregard if it is a joke, I think the question is interesting. So let’s solve it.<br>The idea is using Exhaustive Method (Brute Force Method) to find two prime factors. We can calculate all possible prime and use 7,140,229,933 divide them all, if the mod is equal to 0 then we got both prime numbers. However, 7,140,229,933 is a relatively large number. To find all prime number could take a long time. Since 7,140,229,933 is the product of two prime, one of the numbers must smaller than the <strong>Square Root</strong> of it. Therefore the order of magnitude of range could reduce from $10^9$ to $10^4$.<br>Here is my solution.</p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019-04-06-solve-the-problem-of-a-april-fools-joke/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
+<a id="more"></a>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line">start = time.time()</span><br><span class="line"></span><br><span class="line"><span class="comment"># The input number</span></span><br><span class="line">input = <span class="number">7140229933</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Function of checking wether a numner is a prime number</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">if_pre</span><span class="params">(n)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">2</span>,n):</span><br><span class="line">        <span class="keyword">if</span> n%i == <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">False</span></span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="comment"># Here 'else' and 'for' are in same level. Therefore,</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">True</span></span><br><span class="line"><span class="comment"># Get a list of the possibile prime smaller than the Square Root of the input number</span></span><br><span class="line">x_list = []           </span><br><span class="line"><span class="keyword">for</span> x <span class="keyword">in</span> range (<span class="number">2</span>,round(input**(<span class="number">0.5</span>))):</span><br><span class="line">    <span class="keyword">if</span> if_pre(x) == <span class="keyword">True</span>:</span><br><span class="line">        x_list.append(x)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Find the other factor</span></span><br><span class="line"><span class="keyword">for</span> x <span class="keyword">in</span> x_list:</span><br><span class="line">    <span class="keyword">if</span> input%x ==<span class="number">0</span>:</span><br><span class="line">        print(x)</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">print(input / <span class="number">83777</span>)</span><br><span class="line"></span><br><span class="line">end = time.time()</span><br><span class="line">print(<span class="string">'Total Time: &#123;&#125;s.'</span>.format(end - start))</span><br></pre></td></tr></table></figure>
+<p>Output:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">83777</span></span><br><span class="line"><span class="number">85229.0</span></span><br><span class="line">Total Time: <span class="number">34.96000599861145</span>s</span><br></pre></td></tr></table></figure></p>
+
       
     </div>
 
@@ -505,189 +502,88 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://j84lee.github.io/2019-03-20-How to Build Consistent Development Environment through Docker/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Author">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Johnny's">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019-03-20-How to Build Consistent Development Environment through Docker/" class="post-title-link" itemprop="url">How to Build Consistent Development Environment through Docker</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Post created:2019-03-20 02:02:28" itemprop="dateCreated datePublished" datetime="2019-03-20T02:02:28-07:00">2019-03-20</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Bearbeitet am</span>
-                
-                <time title="Post modified:2019-04-06 21:48:42" itemprop="dateModified" datetime="2019-04-06T21:48:42-07:00">2019-04-06</time>
-              
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/Python-Coding-Challenge-Funny-Algorithms/" rel="tag"># Python,Coding Challenge,Funny,Algorithms</a>
           
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">Kommentare:</span>
-                <a href="/2019-03-20-How to Build Consistent Development Environment through Docker/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019-03-20-How to Build Consistent Development Environment through Docker/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
+      
+        <div class="post-widgets">
         
-          <p>I am usually run Jupyter Notebook or Hydrogen in my MacBook Pro. However, sometimes, for a massive dataset or complex model, I need to use my more powerful desktop or Cloud Service. But setting up the environment and installing tools and packages can be time-consuming, and no need to mention the compatibility problems. Luckily, we have Docker! It “containerized” the working environment. For different machines, you can have identical containers. Therefore, you have the same working environment setup, same package, same settings, and same software versions.  If you update one container, you can take a snapshot, push it to the repository, and update the modification to other machines. For more information, you can click <a href="https://www.docker.com/why-docker" target="_blank" rel="noopener">here</a>.</p>
-<h2 id="MY-DOCKER-IMAGE"><a href="#MY-DOCKER-IMAGE" class="headerlink" title="MY DOCKER IMAGE"></a>MY DOCKER IMAGE</h2><p>I build my own docker image which contents my personal setup and packages. To check my Docker image, you can click <a href="https://github.com/ipython-contrib/jupyter_contrib_nbextensions" target="_blank" rel="noopener">here</a></p>
-          <!--noindex-->
+
+        
+
+        
           
-            <div class="post-button text-center">
-              <a class="btn" href="/2019-03-20-How to Build Consistent Development Environment through Docker/#more" rel="contents">
-                Read more &raquo;
+          <div class="social_share">
+            
+              <div>
+                
+
+<script src="//cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.css">
+
+
+  
+
+
+<div class="likely">
+	
+ 	 	<div class="twitter">Tweet</div>
+	
+ 	 	<div class="facebook">Share</div>
+	
+ 	 	<div class="linkedin">Link</div>
+	
+ 	 	<div class="gplus">Plus</div>
+	
+ 	 	<div class="vkontakte">Share</div>
+	
+ 	 	<div class="odnoklassniki">Class</div>
+	
+ 	 	<div class="telegram">Send</div>
+	
+ 	 	<div class="whatsapp">Send</div>
+	
+ 	 	<div class="pinterest">Pin</div>
+	
+</div>
+
+              </div>
+            
+            
+            
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019-03-20-How to Build Consistent Development Environment through Docker/" rel="next" title="How to Build Consistent Development Environment through Docker">
+                <i class="fa fa-chevron-left"></i> How to Build Consistent Development Environment through Docker
               </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
+            
+          </div>
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -697,14 +593,22 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -1000,6 +904,10 @@
 
 
   
+  <script src="/js/src/scrollspy.js?v=7.0.1"></script>
+<script src="/js/src/post-details.js?v=7.0.1"></script>
+
+
 
   
 
@@ -1018,9 +926,28 @@
   <script id="dsq-count-scr" src="https://j84lee-github-io.disqus.com/count.js" async></script>
 
 
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://j84lee.github.io/2019-04-06-solve-the-problem-of-a-april-fools-joke/";
+    this.page.identifier = "2019-04-06-solve-the-problem-of-a-april-fools-joke/";
+    this.page.title = 'Solve the Problem of a April Fool\'s Joke';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://j84lee-github-io.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    loadComments();
+  
+</script>
 
 
 
+
+
+  
 
 
   
@@ -1036,12 +963,6 @@
   
 
   
-  
-    
-      
-    
-      
-    
   
 
   
