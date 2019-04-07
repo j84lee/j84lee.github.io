@@ -205,7 +205,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="Navigationsleiste an/ausschalten">
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -398,12 +398,24 @@
                 
               
 
-              <time title="Post created:2019-04-06 14:35:05 / Post modified:22:47:06" itemprop="dateCreated datePublished" datetime="2019-04-06T14:35:05-07:00">2019-04-06</time>
+              <time title="Post created:2019-04-06 14:35:05" itemprop="dateCreated datePublished" datetime="2019-04-06T14:35:05-07:00">2019-04-06</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Post modified:2019-04-07 14:05:51" itemprop="dateModified" datetime="2019-04-07T14:05:51-07:00">2019-04-07</time>
               
             
           </span>
@@ -438,7 +450,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
             
-                <span class="post-meta-item-text">Kommentare:</span>
+                <span class="post-meta-item-text">Comments:</span>
                 <a href="/2019-04-06-solve-the-problem-in-a-april-fools-joke/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019-04-06-solve-the-problem-in-a-april-fools-joke/" itemprop="commentCount"></span>
                 </a>
@@ -472,10 +484,10 @@
           <p>On April 1st, one of the post on <a href="https://www.v2ex.com/t/550870" target="_blank" rel="noopener">v2ex</a> (An online community of developers and designers in China<a href="https://zh.wikipedia.org/wiki/V2EX" target="_blank" rel="noopener">^1</a>) become viral. The <a href="https://www.v2ex.com/t/550870" target="_blank" rel="noopener">post</a> title is “Seeking Marriage” and it is posted on April 1st, so most reactions of this post are pointing out that this is the <strong>“new trap” of the recruiters</strong>.</p>
 <p><img src="https://ws2.sinaimg.cn/large/006tNc79ly1g1tpdp6npxj30m80cigmg.jpg" alt="It's a trap" width="400"></p>
 <p>Here is the translation.  “I am born and raised in Hangzhou. I am a science student at Zhejiang University … I hope to find a man can pass the following test. <strong>My Wechat ID is my Family name Lin followed with two prime number. The smaller prime number is in the front. The product of these two prime numbers 7140229933.</strong> If you can find my Wechat ID, I will sincerely date you. Bula bula bula … “</p>
-<p>Disregard if it is a joke, I think the question is interesting. So let’s solve it.<br>The idea is using Exhaustive Method (Brute Force Method) to find two prime factors. We can calculate all possible prime and use 7,140,229,933 divide them all, if the mod is equal to 0 then we got both prime numbers. However, 7,140,229,933 is a relatively large number. To find all prime number could take a long time. Since 7,140,229,933 is the product of two prime, one of the numbers must smaller than the <strong>Square Root</strong> of it. Therefore the order of magnitude of range could reduce from $10^9$ to $10^4$.<br>Here is my solution.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line">start = time.time()</span><br><span class="line"></span><br><span class="line"><span class="comment"># The input number</span></span><br><span class="line">input = <span class="number">7140229933</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Function of checking wether a numner is a prime number</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">if_pre</span><span class="params">(n)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">2</span>,n):</span><br><span class="line">        <span class="keyword">if</span> n%i == <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">False</span></span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="comment"># Here 'else' and 'for' are in same level. Therefore,</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">True</span></span><br><span class="line"><span class="comment"># Get a list of the possibile prime smaller than the Square Root of the input number</span></span><br><span class="line">x_list = []           </span><br><span class="line"><span class="keyword">for</span> x <span class="keyword">in</span> range (<span class="number">2</span>,round(input**(<span class="number">0.5</span>))):</span><br><span class="line">    <span class="keyword">if</span> if_pre(x) == <span class="keyword">True</span>:</span><br><span class="line">        x_list.append(x)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Find the other factor</span></span><br><span class="line"><span class="keyword">for</span> x <span class="keyword">in</span> x_list:</span><br><span class="line">    <span class="keyword">if</span> input%x ==<span class="number">0</span>:</span><br><span class="line">        print(x)</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">print(input / <span class="number">83777</span>)</span><br><span class="line"></span><br><span class="line">end = time.time()</span><br><span class="line">print(<span class="string">'Total Time: &#123;&#125;s.'</span>.format(end - start))</span><br></pre></td></tr></table></figure>
-<p>Output:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">83777</span></span><br><span class="line"><span class="number">85229.0</span></span><br><span class="line">Total Time: <span class="number">34.96000599861145</span>s</span><br></pre></td></tr></table></figure></p>
-<p>So the two prime number are 83777 and 85229. There are many ways to improve the speed, such as using multiprocessing module. I’ll update answer later.</p>
+<p>Disregard if it is a joke, I think the question is interesting. So let’s solve it.<br>The idea is using Exhaustive Method (Brute Force Method) to find two prime factors. However, 7,140,229,933 is a relatively large number. To find all prime number could take a long time. Since 7,140,229,933 is the product of two prime, one of the numbers must smaller than the <strong>Square Root</strong> of it. Therefore the order of magnitude of range could reduce from $10^9$ to $10^4$.<br>Here is my solution.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line">start = time.time()</span><br><span class="line"></span><br><span class="line"><span class="comment"># The input number</span></span><br><span class="line">input = <span class="number">7140229933</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> x <span class="keyword">in</span> range (<span class="number">2</span>,int(input**(<span class="number">0.5</span>))):</span><br><span class="line">  <span class="keyword">if</span> input%x ==<span class="number">0</span>:</span><br><span class="line">    print(x)</span><br><span class="line">    <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">print(int(input / <span class="number">83777</span>))</span><br><span class="line"></span><br><span class="line">end = time.time()</span><br><span class="line">print(<span class="string">'Total Time: &#123;&#125;s.'</span>.format(end - start))</span><br></pre></td></tr></table></figure>
+<p>Output:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">83777</span></span><br><span class="line"><span class="number">85229</span></span><br><span class="line">Total Time: <span class="number">0.01737499237060547</span>s.</span><br></pre></td></tr></table></figure></p>
+<p>So the two prime number are 83777 and 85229.</p>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -599,7 +611,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Bearbeitet am</span>
+                  <span class="post-meta-item-text">Edited on</span>
                 
                 <time title="Post modified:2019-04-06 21:48:42" itemprop="dateModified" datetime="2019-04-06T21:48:42-07:00">2019-04-06</time>
               
@@ -618,7 +630,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
             
-                <span class="post-meta-item-text">Kommentare:</span>
+                <span class="post-meta-item-text">Comments:</span>
                 <a href="/2019-03-20-How to Build Consistent Development Environment through Docker/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019-03-20-How to Build Consistent Development Environment through Docker/" itemprop="commentCount"></span>
                 </a>
