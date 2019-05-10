@@ -28,7 +28,7 @@
 <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
 <link rel="icon" type="image/png" href="../assets/img/favicon.png">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Johnny's - Solve the Problem in a April Fool's Joke</title>
+<title>Johnny's - Maching Learning and Price Strategy for Amazon Clout Cam</title>
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" name="viewport">
 <!--     Fonts and icons     -->
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
@@ -92,10 +92,10 @@
       <article class="col-md-8 mr-auto ml-auto">
         <div class="card card-plain card-blog">
           <h2 class="card-blog-title title post-title">
-          Solve the Problem in a April Fool's Joke
+          Maching Learning and Price Strategy for Amazon Clout Cam
           </h2>
           <span class="card-bolg-title-date text-muted">
-            <time datetime="2019-04-06T21:35:05.000Z">2019-04-06</time>&nbsp;&nbsp;
+            <time datetime="2019-05-05T05:13:20.000Z">2019-05-04</time>&nbsp;&nbsp;
             
             <a href="/#data" title="View all posts in data" id="datatab">DATA
             </a>
@@ -104,47 +104,88 @@
             
           </span>
           <div class="card-image  mr-auto ml-auto post-image">
-              <img data-opt-src="https://i.loli.net/2019/04/27/5cc38cc539c01.jpg" src="https://i.loli.net/2019/04/27/5cc38cc539c01.jpg" class="img-fluid img-raised rounded" alt data-opt-loaded="true" data-opt-lazy-loaded="true">
+              <img data-opt-src="https://i.loli.net/2019/05/10/5cd50a8799440.png" src="https://i.loli.net/2019/05/10/5cd50a8799440.png" class="img-fluid img-raised rounded" alt data-opt-loaded="true" data-opt-lazy-loaded="true">
           </div>
           <div class="post-content">
-            <p>On April 1st, one of the post on <a href="https://www.v2ex.com/t/550870" target="_blank" rel="noopener">v2ex</a> (An online community of developers and designers in China<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>) become viral. The <a href="https://www.v2ex.com/t/550870" target="_blank" rel="noopener">post</a> title is “Seeking Marriage” and it is posted on April 1st, so most reactions of this post are pointing out that this is the “new trap” of the recruiters.<br><a id="more"></a><br><img src="https://i.loli.net/2019/04/27/5cc38cc160d0f.jpg" alt="It's a trap" width="400"></p>
-<p>Here is the translation.  “I am born and raised in Hangzhou. I am a science student at Zhejiang University … I hope to find a man can pass the following test. <strong>My Wechat ID is my Family name Lin followed with two prime number. The smaller prime number is in the front. The product of these two prime numbers 7140229933.</strong> If you can find my Wechat ID, I will sincerely date you. Bula bula bula … “ Clearly, it is a algorithm problem.</p>
-<p>Disregard if it is a joke, I think the question is interesting. So let’s solve it.<br>The idea is using Exhaustive Method (Brute Force Method) to find two prime factors. However, 7,140,229,933 is a relatively large number. To find all prime number could take a long time. Since 7,140,229,933 is the product of two prime, one of the numbers must smaller than the <strong>Square Root</strong> of it. Therefore the order of magnitude of range could reduce from $10^9$ to $10^4$.<br>Here is my solution.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line">start = time.time()</span><br><span class="line"></span><br><span class="line"><span class="comment"># The input number</span></span><br><span class="line">input = <span class="number">7140229933</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> x <span class="keyword">in</span> range (<span class="number">2</span>,int(input**(<span class="number">0.5</span>))):</span><br><span class="line">  <span class="keyword">if</span> input%x ==<span class="number">0</span>:</span><br><span class="line">    print(x)</span><br><span class="line">    <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">print(int(input / <span class="number">83777</span>))</span><br><span class="line"></span><br><span class="line">end = time.time()</span><br><span class="line">print(<span class="string">'Total Time: &#123;&#125;s.'</span>.format(end - start))</span><br></pre></td></tr></table></figure>
-<p>Output:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">83777</span></span><br><span class="line"><span class="number">85229</span></span><br><span class="line">Total Time: <span class="number">0.01737499237060547</span>s.</span><br></pre></td></tr></table></figure></p>
-<p>So the two prime number are 83777 and 85229.</p>
-<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;"><a href="https://zh.wikipedia.org/wiki/V2EX" target="_blank" rel="noopener">https://zh.wikipedia.org/wiki/V2EX</a></span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline-block; vertical-align: top;">Photo by <a href="https://unsplash.com/photos/t8VzS-PSNeI?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener">Kevin Wolf</a> on Unsplash</span><a href="#fnref:2" rev="footnote"> ↩</a></li></ol></div></div>
+            <p><a href="https://lijohnny.com"><img src="https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg" alt></a>     <a href="https://www.python.org/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg" alt></a> <a href="https://www.mathjax.org/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Made%20with-MathJax-1f425f.svg" alt></a><br>Customer reviews contain a large amount of information. One of the recurring subjects of NLP is to understand customer opinion through statement analysis of customer reviews. However, Basic Sentimental Classification can only tell customers’ overall impression about the product, and it can’t tell customers’ opinion of specific features of the product. But, if we dive deeper into the customer reviews, we can get more information.</p>
+<p>My goal is to extract features from reviews, identify the opinion of each feature, quantify the sentiment using econometrics, and then generate a price strategy based on it.<br><a id="more"></a></p>
+<blockquote>
+<p><strong>NOTE:</strong><br>This post goes along with <strong><em>Jupyter Notebook</em></strong> available in my Repo on Github: [HowToVisualize]</p>
+</blockquote>
+<!-- TOC -->
+<ul>
+<li><a href="#1-introduction">1. Introduction</a><ul>
+<li><a href="#11-sentiment-analysis">1.1 Sentiment Analysis</a></li>
+<li><a href="#12-basic-sentiment-classification">1.2 Basic Sentiment Classification</a></li>
+<li><a href="#13-feature-based-sentiment-analysis">1.3 Feature Based Sentiment Analysis</a></li>
+</ul>
+</li>
+<li><a href="#2-methodology">2. Methodology</a><ul>
+<li><a href="#21-overviews">2.1 Overviews</a></li>
+<li><a href="#data-overview">Data Overview</a></li>
+<li><a href="#data-clean-and-exploration">Data Clean and Exploration</a></li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+<h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1. Introduction"></a>1. Introduction</h2><h3 id="1-1-Sentiment-Analysis"><a href="#1-1-Sentiment-Analysis" class="headerlink" title="1.1 Sentiment Analysis"></a>1.1 Sentiment Analysis</h3><p>Before going into the methodology, let us refresh Sentiment Analysis. The <strong>Sentiment Analysis</strong> is a process of understanding the opinion of a piece of a subject (text or speech) is positive, neutral or negative. It is in the field of Nature Language Processing (<strong>NLP</strong>).  Several machine learning methods can solve this problem, such as  Logistic Regression, Support Vector Machines (SVM), Naive Bayes, and more. There are also many Python packages and APIs of Several Cloud providers (Google Cloud, AWS, …) can help us on Sentiment Analysis.</p>
+<h3 id="1-2-Basic-Sentiment-Classification"><a href="#1-2-Basic-Sentiment-Classification" class="headerlink" title="1.2 Basic Sentiment Classification"></a>1.2 Basic Sentiment Classification</h3><p>Basic Sentiment Classification classifies <strong>full documents</strong>, such as reviews, articles, based on the overall sentiment. The sentiment is majorly based on sentiment words (good, bad, great) or specific expressions.<br>However, a product review classified as negative sentiment does not mean that the customer doesn’t like any features and vice versa.</p>
+<h3 id="1-3-Feature-Based-Sentiment-Analysis"><a href="#1-3-Feature-Based-Sentiment-Analysis" class="headerlink" title="1.3 Feature Based Sentiment Analysis"></a>1.3 Feature Based Sentiment Analysis</h3><p>To have a clear idea of what a customer like and dislike of a product,<br>We can extract feature and find the customer’s opinions related to these features.</p>
+<h2 id="2-Methodology"><a href="#2-Methodology" class="headerlink" title="2. Methodology"></a>2. Methodology</h2><h3 id="2-1-Overviews"><a href="#2-1-Overviews" class="headerlink" title="2.1 Overviews"></a>2.1 Overviews</h3><p>My approach includes 9 steps. First, I need to</p>
+<p><pre class="mermaid">graph TD<br>A( Amazon Review Raw Data ) –&gt; B( Data Cleaning  )<br>B –&gt; C( Sentences Separation )<br>C –&gt; D( Subject/Object Separation )<br>D –&gt; E( Sentiment Scoring )<br>D –&gt; F( Feature Extraction )<br>E –&gt; G( Feature Reputation )<br>F –&gt; G( Feature Reputation )<br>G –&gt; H( Sentiment Quantifying  )<br>H –&gt; I( Price Premiums Prediction )</pre></p>
+<h3 id="Data-Overview"><a href="#Data-Overview" class="headerlink" title="Data Overview"></a>Data Overview</h3><p>The product category I was working on is the home security camera. I scraped reviews of targe product and its competitors from Amazon.com. The dataset contents 53,657 reviews of 15 different home security cameras from Amazon.com. with the following information for each one:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Product</strong></td>
+<td>Name of the Product</td>
+</tr>
+<tr>
+<td><strong>Username</strong></td>
+<td>User’s ID</td>
+</tr>
+<tr>
+<td><strong>Stars</strong></td>
+<td>1-5 rating for the product</td>
+</tr>
+<tr>
+<td><strong>Title</strong></td>
+<td>The subject of the review</td>
+</tr>
+<tr>
+<td><strong>Date</strong></td>
+<td>The review date</td>
+</tr>
+<tr>
+<td><strong>Review</strong></td>
+<td>Review text</td>
+</tr>
+<tr>
+<td><strong>Helpfulcount</strong></td>
+<td>How many people click “Helpful” button</td>
+</tr>
+<tr>
+<td><strong>ReviewTotal</strong></td>
+<td>How many comments under this review</td>
+</tr>
+</tbody>
+</table>
+<p>The average length of reviews of the product is around 200.<br><img src="https://i.loli.net/2019/05/10/5cd50e6d23672.png" alt><br>Most of reviews is in the range of 4 years.<br><img src="https://i.loli.net/2019/05/10/5cd50e701f6ea.png" alt><br>Most of the product has 2000 reviews.<br><img src="https://i.loli.net/2019/05/10/5cd50e6e9cbf1.png" alt></p>
+<h3 id="Data-Clean-and-Exploration"><a href="#Data-Clean-and-Exploration" class="headerlink" title="Data Clean and Exploration"></a>Data Clean and Exploration</h3><p>– Will update soon!</p>
+
           </div>
           
           <div class="row">
               <ul class="nav card-bolg-title-tag post-title-tag mr-auto ml-auto ">
                 
                 <li class>
-                  <a href="/tags/Python/" title="View all posts in Python">#Python
-                  
-                  ,&nbsp;
-                  
-                  </a>
-                </li>
-                
-                <li class>
-                  <a href="/tags/Coding-Challenge/" title="View all posts in Coding Challenge">#Coding Challenge
-                  
-                  ,&nbsp;
-                  
-                  </a>
-                </li>
-                
-                <li class>
-                  <a href="/tags/Funny/" title="View all posts in Funny">#Funny
-                  
-                  ,&nbsp;
-                  
-                  </a>
-                </li>
-                
-                <li class>
-                  <a href="/tags/Algorithms/" title="View all posts in Algorithms">#Algorithms
+                  <a href="/tags/Python-PCA-Regression-Analysis-Price-Strategy-review-NPL-sentiment-POC-Feature-abstraction/" title="View all posts in Python,PCA,Regression,Analysis,Price Strategy,review,NPL,sentiment,POC,Feature abstraction">#Python,PCA,Regression,Analysis,Price Strategy,review,NPL,sentiment,POC,Feature abstraction
                   
                   
                   </a>
@@ -168,21 +209,21 @@
            
              
                <div class="post-prev post-prev-small  col-lg-6">
-                <a class="post-prev-arrow" href="/2019-04-19-Spam-Detection-and-Analysis-P1/" title="Spam Detection and Analysis (Part 1 - Parsing)" rel="prev">
+                <a class="post-prev-arrow" href="/2019-05-09-Spam-Detection-and-Analysis-P2/" title="Spam Detection and Analysis (Part 2 - Analysis with R)" rel="prev">
                   <i class="fa fa-angle-double-left"></i>
                 </a>
                 <div class="post-prev-img">
-                  <a href="/2019-04-19-Spam-Detection-and-Analysis-P1/" title="Spam Detection and Analysis (Part 1 - Parsing)" rel="prev">
-                    <img src="https://i.loli.net/2019/05/10/5cd50420b955f.png" class="rounded" alt="Spam Detection and Analysis (Part 1 - Parsing)" srcset=" " data-src="https://i.loli.net/2019/05/10/5cd50420b955f.png" data-sizes data-srcset=" " sizes>
+                  <a href="/2019-05-09-Spam-Detection-and-Analysis-P2/" title="Spam Detection and Analysis (Part 2 - Analysis with R)" rel="prev">
+                    <img src="https://i.loli.net/2019/05/10/5cd5051a0e1f9.png" class="rounded" alt="Spam Detection and Analysis (Part 2 - Analysis with R)" srcset=" " data-src="https://i.loli.net/2019/05/10/5cd5051a0e1f9.png" data-sizes data-srcset=" " sizes>
                   </a>
                 </div>
                 <div class="post-prev-wrapper">
-                  <a href="/2019-04-19-Spam-Detection-and-Analysis-P1/" title="Spam Detection and Analysis (Part 1 - Parsing)" rel="prev">
+                  <a href="/2019-05-09-Spam-Detection-and-Analysis-P2/" title="Spam Detection and Analysis (Part 2 - Analysis with R)" rel="prev">
                     <span class="post_navigation_title title">Previous Post:</span>
                   </a>
                   <h4 class="title post-prevnext-title">
-                    <a href="/2019-04-19-Spam-Detection-and-Analysis-P1/">
-                      Spam Detection and Analysis (Part 1 - Parsing)
+                    <a href="/2019-05-09-Spam-Detection-and-Analysis-P2/">
+                      Spam Detection and Analysis (Part 2 - Analysis with R)
                     </a>
                   </h4>
                 </div>
@@ -190,20 +231,20 @@
              
              
                <div class="post-next col-lg-6">
-                <a class="post-next-arrow" href="/2019-03-20-How to Build Consistent Development Environment through Docker/" title="How to Build Consistent Development Environment through Docker" rel="next">
+                <a class="post-next-arrow" href="/2019-04-19-Spam-Detection-and-Analysis-P1/" title="Spam Detection and Analysis (Part 1 - Parsing)" rel="next">
                   <i class="fa fa-angle-double-right"></i>
                 </a>
                 <div class="post-next-img">
-                  <a href="/2019-03-20-How to Build Consistent Development Environment through Docker/" title="How to Build Consistent Development Environment through Docker" rel="next">
-                    <img src="https://i.loli.net/2019/04/27/5cc38cc0066e1.jpg" class="rounded" alt="How to Build Consistent Development Environment through Docker" srcset=" " data-src="https://i.loli.net/2019/04/27/5cc38cc0066e1.jpg" data-sizes data-srcset=" " sizes>
+                  <a href="/2019-04-19-Spam-Detection-and-Analysis-P1/" title="Spam Detection and Analysis (Part 1 - Parsing)" rel="next">
+                    <img src="https://i.loli.net/2019/05/10/5cd50420b955f.png" class="rounded" alt="Spam Detection and Analysis (Part 1 - Parsing)" srcset=" " data-src="https://i.loli.net/2019/05/10/5cd50420b955f.png" data-sizes data-srcset=" " sizes>
                   </a>
                 </div>
                 <div class="post-next-wrapper">
-                  <a href="/2019-03-20-How to Build Consistent Development Environment through Docker/" title="How to Build Consistent Development Environment through Docker" rel="next">
+                  <a href="/2019-04-19-Spam-Detection-and-Analysis-P1/" title="Spam Detection and Analysis (Part 1 - Parsing)" rel="next">
                     <span class="post_navigation_title title">Next Post:</span>
                   </a>
                   <h4 class="title post-prevnext-title">
-                    <a href="/2019-03-20-How to Build Consistent Development Environment through Docker/">How to Build Consistent Development Environment through Docker</a>
+                    <a href="/2019-04-19-Spam-Detection-and-Analysis-P1/">Spam Detection and Analysis (Part 1 - Parsing)</a>
                   </h4>
                 </div>
               </div>
@@ -312,9 +353,9 @@
 
 <script>
   var disqus_config = function() {
-    this.page.url = "https://lijohnny.com/2019-04-06-solve-the-problem-in-a-april-fools-joke/";
-    this.page.identifier = "2019-04-06-solve-the-problem-in-a-april-fools-joke/";
-    this.page.title = 'Solve the Problem in a April Fool\'s Joke';
+    this.page.url = "https://lijohnny.com/2019-05-04-Maching Learning and Price Strategy for Amazon Clout Cam/";
+    this.page.identifier = "2019-05-04-Maching Learning and Price Strategy for Amazon Clout Cam/";
+    this.page.title = 'Maching Learning and Price Strategy for Amazon Clout Cam';
     };
   function loadComments() {
     var d = document, s = d.createElement('script');

@@ -124,6 +124,16 @@
   padding-left: 15px;
 }
 
+.card-blog-copyright {
+  margin-top:30px;
+}
+
+.card-blog-copyright p{
+  font-style:normal;
+  margin: 0px;
+  font-size: 0.7em;
+}
+
 .post-share{
   margin-top: 30px;
   margin-bottom: 30px;
