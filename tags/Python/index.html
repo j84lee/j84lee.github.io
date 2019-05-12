@@ -30,7 +30,7 @@
 <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
 <link rel="icon" type="image/png" href="../assets/img/favicon.png">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Johnny's - Tag: Python</title>
+<title>Johnny's - Tag: python</title>
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" name="viewport">
 <!--     Fonts and icons     -->
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
@@ -87,14 +87,14 @@
 
   
   <div id="tag">
-    <h1>Python</h1>
+    <h1>python</h1>
     
       <div class="tag-item">
-        <a href="/2019-04-06-solve-the-problem-in-a-april-fools-joke/">
-          Solve the Problem in a April Fool's Joke
+        <a href="/2019-05-11-scripts-automate-crop-compress-and-upload-image-for-my-blog/">
+          Scripts that Automate Crop Compress and Upload Image for My Blog
         </a>
-        <time datetime="2019-04-06T21:35:05.000Z">
-          2019-04-06
+        <time datetime="2019-05-12T05:28:30.000Z">
+          2019-05-11
         </time>
       </div>
     
@@ -207,6 +207,36 @@
         $imageWrapLink = $image.wrap('<a class="fancybox fancybox.image post-image-link" href="' + imageLink + '" itemscope itemtype="http://schema.org/ImageObject" itemprop="url"></a>').parent('a');
         if ($image.is('.post-gallery img')) {
           $imageWrapLink.addClass('post-gallery-img');
+          $imageWrapLink.attr('data-fancybox', 'gallery').attr('rel', 'gallery');
+        }
+        else if ($image.is('.group-picture img')) {
+          $imageWrapLink.attr('data-fancybox', 'group').attr('rel', 'group');
+        }
+        else {
+          $imageWrapLink.attr('data-fancybox', 'default').attr('rel', 'default');
+        }
+      }
+
+      if (imageTitle) {
+        $imageWrapLink.append('<p class="image-caption">' + imageTitle + '</p>');
+        // Make sure img title tag will show correctly in fancybox
+        $imageWrapLink.attr('title', imageTitle).attr('data-caption', imageTitle);
+      }
+    });
+
+  $('.fancybox').fancybox({
+    loop: true,
+    helpers: {
+      overlay: {
+        locked: false
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
+rapLink.addClass('post-gallery-img');
           $imageWrapLink.attr('data-fancybox', 'gallery').attr('rel', 'gallery');
         }
         else if ($image.is('.group-picture img')) {
