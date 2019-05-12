@@ -1,15 +1,9 @@
 
 
 
-  
 
 
 
-
-  
-
-
-  
 
 
 
@@ -34,7 +28,7 @@
 <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
 <link rel="icon" type="image/png" href="../assets/img/favicon.png">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Johnny's - Archives: 5/2019: 2019</title>
+<title>Johnny's - Scripts that Automate Crop Compress and Upload Image for My Blog</title>
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" name="viewport">
 <!--     Fonts and icons     -->
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
@@ -90,44 +84,123 @@
 </nav>
 
   
-  
-  
-  
+  <div class="page-header" data-parallax="true" style="background-image: url('/img/bg2.jpg');"></div>
 
-  
-    <h1>5/2019</h1>
-    
-      <div class="archive-item">
-        <a href="/2019-05-11-a-script-automate-crop-compress-and-upload-image-for-my-blog/">
+  <div class="main main-raised post-raised">
+    <div class="profile-content">
+      <div class="container">
+      <article class="col-md-8 mr-auto ml-auto">
+        <div class="card card-plain card-blog">
+          <h2 class="card-blog-title title post-title">
           Scripts that Automate Crop Compress and Upload Image for My Blog
-        </a>
-        <time datetime="2019-05-12T05:28:30.000Z">
-          2019-05-11
-        </time>
-      </div>
-    
-      <div class="archive-item">
-        <a href="/2019-05-09-Spam-Detection-and-Analysis-P2/">
-          Spam Detection and Analysis (Part 2 - Analysis with R)
-        </a>
-        <time datetime="2019-05-10T04:47:43.000Z">
-          2019-05-09
-        </time>
-      </div>
-    
-      <div class="archive-item">
-        <a href="/2019-05-04-Maching Learning and Price Strategy for Amazon Clout Cam/">
-          Maching Learning and Price Strategy for Amazon Clout Cam
-        </a>
-        <time datetime="2019-05-05T05:13:20.000Z">
-          2019-05-04
-        </time>
-      </div>
-    
-    <div id="paginator">
-      
+          </h2>
+          <span class="card-bolg-title-date text-muted">
+            <time datetime="2019-05-12T05:28:30.000Z">2019-05-11</time>&nbsp;&nbsp;
+            
+            <a href="/#blog" title="View all posts in blog" id="blogtab">BLOG
+            </a>
+            
+              
+            
+          </span>
+          <div class="card-image  mr-auto ml-auto post-image">
+              <img data-opt-src="https://i.loli.net/2019/05/12/5cd7b069e734a.jpg" src="https://i.loli.net/2019/05/12/5cd7b069e734a.jpg" class="img-fluid img-raised rounded" alt data-opt-loaded="true" data-opt-lazy-loaded="true">
+          </div>
+          <div class="post-content">
+            <p>As you can see, my blog contains a lot of cover images. Every time I write an article I need to upload a cover image. However, the process is complicated and trivial. I need to crop the image to a certain proportion. I need to resize and compress the image to reduce the loading time. Since I want to put the photographer’s name on the image, I need to use other software to add it. Therefore, to automate the process, I create two python scripts.<br><a id="more"></a></p>
+<blockquote>
+<p>For more information and code, please go to my <a href="https://github.com/iamjohnnyli/blog-image-processing-automation" target="_blank" rel="noopener">github page</a>.</p>
+</blockquote>
+<p>These scripts are for automating the process of cropping, resizing, adding author’s information, compressing, and uploading an image.</p>
+<ul>
+<li>The compressing service I use <a href="https://tinypng.com" target="_blank" rel="noopener">tinypng</a></li>
+<li>The storage for image I user <a href="https://sm.ms/" target="_blank" rel="noopener">sm.ms</a></li>
+<li>This script works only for the image download from <a href="https://unsplash.com/" target="_blank" rel="noopener">unsplash.com</a>, since I use regular expression operations to get the author’s name from file name.</li>
+</ul>
+<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><p>To use correctly, you need to create an <figure class="highlight plain"><figcaption><span>file that contains only the API key for  [tinypng](https://tinypng.com). To generate an API key, you can check [https://tinypng.com/developers](https://tinypng.com/developers).</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```main.py``` can be easily run in the terminal with the command:</span><br><span class="line">```bash</span><br><span class="line">python main.py</span><br></pre></td></tr></table></figure></p>
+<p>Once it launched, you can drag and drop any image on it.</p>
+<p><code>automator.py</code> can be used in Mac’s Automator. By building a server with Automator, I can right click on any image and run the script, or use a shortcut to run the script.</p>
+
+          </div>
+          
+          <div class="row">
+              <ul class="nav card-bolg-title-tag post-title-tag mr-auto ml-auto ">
+                
+                <li class>
+                  <a href="/tags/python-automation-api-tinypng-SM-MS-blog-automator/" title="View all posts in python,automation,api,tinypng,SM.MS,blog,automator">#python,automation,api,tinypng,SM.MS,blog,automator
+                  
+                  
+                  </a>
+                </li>
+                
+              </ul>
+           </div>
+           <div class="card-bolg-bottom-line"></div>
+           <div class="row">
+             <div class="post-share mr-auto ml-auto">
+              <div class="likely likely-small">
+                <div class="twitter">Tweet</div>
+                <div class="facebook">Share</div>
+                <div class="linkedin">Link</div>
+                <div class="whatsapp">Send</div>
+              </div>
+            </div>
+           </div>
+           <div class="card-bolg-bottom-line"></div>
+           <div class="row post-prevnext">
+           
+             
+             
+               <div class="post-next col-lg-6">
+                <a class="post-next-arrow" href="/2019-05-09-Spam-Detection-and-Analysis-P2/" title="Spam Detection and Analysis (Part 2 - Analysis with R)" rel="next">
+                  <i class="fa fa-angle-double-right"></i>
+                </a>
+                <div class="post-next-img">
+                  <a href="/2019-05-09-Spam-Detection-and-Analysis-P2/" title="Spam Detection and Analysis (Part 2 - Analysis with R)" rel="next">
+                    <img src="https://i.loli.net/2019/05/10/5cd5051a0e1f9.png" class="rounded" alt="Spam Detection and Analysis (Part 2 - Analysis with R)" srcset=" " data-src="https://i.loli.net/2019/05/10/5cd5051a0e1f9.png" data-sizes data-srcset=" " sizes>
+                  </a>
+                </div>
+                <div class="post-next-wrapper">
+                  <a href="/2019-05-09-Spam-Detection-and-Analysis-P2/" title="Spam Detection and Analysis (Part 2 - Analysis with R)" rel="next">
+                    <span class="post_navigation_title title">Next Post:</span>
+                  </a>
+                  <h4 class="title post-prevnext-title">
+                    <a href="/2019-05-09-Spam-Detection-and-Analysis-P2/">Spam Detection and Analysis (Part 2 - Analysis with R)</a>
+                  </h4>
+                </div>
+              </div>
+            
+           
+           </div>
+           <div class="card-bolg-bottom-line"></div>
+
+
+          
+
+            
+
+          <div class="card-bolg-bottom-line"></div>
+
+           <div class="comments" id="comments">
+             <div id="disqus_thread">
+               <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+             </div>
+           </div>
+
+         
+      </div></article>
+
     </div>
-  
+
+
+    </div>
+  </div>
+
+
+  <div id="paginator">
+    
+  </div>
+
 
 
   <footer class="footer footer-default">
@@ -198,6 +271,23 @@
 
   <script id="dsq-count-scr" src="https://j84lee-github-io.disqus.com/count.js" async></script>
 
+
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://lijohnny.com/2019-05-11-a-script-automate-crop-compress-and-upload-image-for-my-blog/";
+    this.page.identifier = "2019-05-11-a-script-automate-crop-compress-and-upload-image-for-my-blog/";
+    this.page.title = 'Scripts that Automate Crop Compress and Upload Image for My Blog';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://j84lee-github-io.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    loadComments();
+  
+</script>
 
 
 
