@@ -245,6 +245,35 @@ blockquote{
 }
 
 
+.blog-footer{
+  margin-top: 50px;
+}
+.widge-title{
+  margin-bottom: 20px;
+}
+.tweets-list{
+  list-style: none;
+  padding-left: 0;
+}
+
+.tweet-item a{
+  color:#3C4858
+}
+
+
+.tweet-item{
+  font-size: 0.9em;
+  word-wrap:break-word;
+  margin-bottom: 28px;
+}
+
+.tweet-author{
+  margin-bottom: 7px;
+}
+.tweet_text{
+  line-height: 1.4em;
+
+}
 
 /* -------------------------------------- */
 /* highlight */
