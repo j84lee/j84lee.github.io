@@ -13,7 +13,7 @@ categories:
   - Blog
   - UX
 keywords: blog, hugo, hexo, ux, design, frontend
-description: Say good by to my old website.
+description: Say goodbye to my old website.
 image: bg2.png
 ---
 
