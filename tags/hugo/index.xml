@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on Johnny's</title><link>https://lijohnny.com/tags/hugo/</link><description>Recent content in Hugo on Johnny's</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 03 Mar 2021 20:03:50 +0000</lastBuildDate><atom:link href="https://lijohnny.com/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Switch from Hexo to Hugo</title><link>https://lijohnny.com/p/switch-from-hexo-to-hugo/</link><pubDate>Wed, 03 Mar 2021 20:03:50 +0000</pubDate><guid>https://lijohnny.com/p/switch-from-hexo-to-hugo/</guid><description>It&amp;rsquo;s been a year since last time I update my blog. Recently, I want to get back to writing blog again. However, I encounter some issues.
+Hexo, the static web generator I used, was not compatible with current node.js version in my system.
+Somehow node.js was extremely slow in WSL2.
+I prefer working with the language that I&amp;rsquo;m more familiar with.
+Therefore, I start looking for other solutions.</description></item></channel></rss>
