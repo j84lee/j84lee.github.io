@@ -14,7 +14,7 @@ categories:
   - UX
 keywords: blog, hugo, hexo, ux, design, frontend
 description: Say good by to my old website.
-image: https://lijohnny.com/img/bg2.png
+image: bg2.png
 ---
 
 It's been a year since last time I update my blog. Recently, I want to get back to writing blog again. However, I encounter some issues.
