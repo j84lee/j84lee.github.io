@@ -5,13 +5,11 @@ tags:
     - Hugo
     - Hexo
     - Go
-    - UX
     - Front End
     - Design
 
 categories:
   - Blog
-  - UX
 keywords: blog, hugo, hexo, ux, design, frontend
 description: Say goodbye to my old website.
 image: bg2.png
@@ -25,10 +23,10 @@ It's been a year since last time I update my blog. Recently, I want to get back 
 
 1. I prefer working with the language that I'm more familiar with.
 
-Therefore, I start looking for other solutions. After comparing and trying several static web generators. I picked Hugo. The reason is sample, it is fast and I find the theme I like.  
+Therefore, I start looking for other solutions. After comparing and trying several static web generators. I picked Hugo. The reason is sample. Hugo is fast, and I find the theme I like.  
 
 
-Here is the screenshot for my perverse website. Hexo has tens of theme too. But I didn't find one fit me needs. So, I created my own theme. The whole design based on [Material Kit](https://demos.creative-tim.com/material-kit/).
+Here is the screenshot for my perverse website. Hexo has tens of theme too. But I didn't find one fit me needs. So, I created my own theme. The design is based on [Material Kit](https://demos.creative-tim.com/material-kit/). 
 
 ![](Screenshot.png)
 

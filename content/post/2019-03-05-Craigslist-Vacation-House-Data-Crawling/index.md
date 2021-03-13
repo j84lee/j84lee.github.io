@@ -3,8 +3,8 @@ title: Craigslist Vacation House Data Crawling
 date: 2019-02-12T01:13:34-08:00 
 description: The is a tutorial of using Scrayp to get collect data from Craigslist.com. 
 categories: 
-    - Data
     - Python
+    - Tutorial
 
 tags:
     - Python

@@ -1,6 +1,8 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-image: 
+description: ""
+slug: "{{ lower .Name | title }}"
+image: ""
 style:
     background: "#2a9d8f"
     color: "#fff"

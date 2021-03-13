@@ -17,10 +17,13 @@ description: This is an introduction to my Python Script that automates image pr
 image: https://i.loli.net/2019/05/12/5cd7b069e734a.jpg
 
 ---
+
+>:warning:The old cript is `DEPRECATED`. I switch to FastAPI, and updated the code [here](https://github.com/iamjohnnyli/blog-image-processing-automation). The old code is now in [v1.0 Branch](https://github.com/iamjohnnyli/blog-image-processing-automation/tree/V1.0).  
+
 As you can see, my blog contains cover images. Every time I write an article I need to upload a cover image to the image server. However, the process is complicated and trivial. I need to crop the image to a certain proportion and resize and compress the image to reduce the loading time. Moreover, to put the photographer's name on the image, I need to use other software. Therefore, I create two python scripts to automate the process.
 <!--more-->
 
-> For more information and code script, please go to my [GitHub page](https://github.com/iamjohnnyli/blog-image-processing-automation).
+> For more information and code script, please go to my [GitHub page](https://github.com/iamjohnnyli/blog-image-processing-automation/tree/V1.0).
 
 These scripts are for automating the process of cropping, resizing, adding author's information, compressing, and uploading an image.
 

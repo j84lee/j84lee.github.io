@@ -1,7 +1,7 @@
 ---
 title: {{ replace .Name "-" " " | title }}
 description: 
-author: {{ .Site.Params.author }}
+author: {{ .Site.Author.display_name }}
 date: {{ .Date }}
 tags:
     - Python
