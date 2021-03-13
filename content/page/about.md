@@ -23,7 +23,7 @@ SQL, Python, R, Power BI, Tableau, ETL Pipeline, Excel, HTML Dashboard Machine L
 
 
 **Project Management:**  
-Agiley, Lean, Six Sigma, Azure Devops, Jira, Business Process Mapping, Process Optimization, KPI/ORK
+Agile, Lean, Six Sigma, Azure Devops, Jira, Business Process Mapping, Process Optimization, KPI/ORK
 
 **UX Research:**  
 User Research, Journey Map, Usability Test, Funnel analysis, Google Analytics
