@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Johnny's</title><link>https://lijohnny.com/</link><description>Recent content on Johnny's</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 03 Mar 2021 20:03:50 +0000</lastBuildDate><atom:link href="https://lijohnny.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Switch from Hexo to Hugo</title><link>https://lijohnny.com/p/switch-from-hexo-to-hugo/</link><pubDate>Wed, 03 Mar 2021 20:03:50 +0000</pubDate><guid>https://lijohnny.com/p/switch-from-hexo-to-hugo/</guid><description>&lt;img src="https://lijohnny.com/p/switch-from-hexo-to-hugo/bg2.png" alt="Featured image of post Switch from Hexo to Hugo" />&lt;p>It&amp;rsquo;s been a year since last time I update my blog. Recently, I want to get back to writing blog again. However, I encounter some issues.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Johnny's Blog</title><link>https://lijohnny.com/</link><description>Recent content on Johnny's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 03 Mar 2021 20:03:50 +0000</lastBuildDate><atom:link href="https://lijohnny.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Switch from Hexo to Hugo</title><link>https://lijohnny.com/p/switch-from-hexo-to-hugo/</link><pubDate>Wed, 03 Mar 2021 20:03:50 +0000</pubDate><guid>https://lijohnny.com/p/switch-from-hexo-to-hugo/</guid><description>&lt;img src="https://lijohnny.com/p/switch-from-hexo-to-hugo/bg2.png" alt="Featured image of post Switch from Hexo to Hugo" />&lt;p>It&amp;rsquo;s been a year since last time I update my blog. Recently, I want to get back to writing blog again. However, I encounter some issues.&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>&lt;a class="link" href="https://hexo.io/" target="_blank" rel="noopener"
@@ -11,8 +11,8 @@
 &lt;p>I prefer working with the language that I&amp;rsquo;m more familiar with.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>Therefore, I start looking for other solutions. After comparing and trying several static web generators. I picked Hugo. The reason is sample, it is fast and I find the theme I like.&lt;/p>
-&lt;p>Here is the screenshot for my perverse website. Hexo has tens of theme too. But I didn&amp;rsquo;t find one fit me needs. So, I created my own theme. The whole design based on &lt;a class="link" href="https://demos.creative-tim.com/material-kit/" target="_blank" rel="noopener"
+&lt;p>Therefore, I start looking for other solutions. After comparing and trying several static web generators. I picked Hugo. The reason is sample. Hugo is fast, and I find the theme I like.&lt;/p>
+&lt;p>Here is the screenshot for my perverse website. Hexo has tens of theme too. But I didn&amp;rsquo;t find one fit me needs. So, I created my own theme. The design is based on &lt;a class="link" href="https://demos.creative-tim.com/material-kit/" target="_blank" rel="noopener"
 >Material Kit&lt;/a>.&lt;/p>
 &lt;p>&lt;figure style="flex-grow: 97; flex-basis: 233px">
 &lt;a href="https://lijohnny.com/p/switch-from-hexo-to-hugo/Screenshot.png" data-size="1176x1211">&lt;img src="https://lijohnny.com/p/switch-from-hexo-to-hugo/Screenshot.png"
@@ -36,9 +36,14 @@ loading="lazy"
 &lt;li>Logistic Regression&lt;/li>
 &lt;/ul>
 &lt;p>You can see the code(iPython notebook) &lt;a class="link" href="https://github.com/iamjohnnyli/udacity-data-scientist-nanodegree/blob/master/Supervised/Project-CharityML/finding_donors_done.ipynb" target="_blank" rel="noopener"
->here&lt;/a>.&lt;/p></description></item><item><title>Automate Image Processing for My Blog</title><link>https://lijohnny.com/p/automate-image-processing-for-my-blog/</link><pubDate>Sat, 11 May 2019 22:28:30 +0000</pubDate><guid>https://lijohnny.com/p/automate-image-processing-for-my-blog/</guid><description>&lt;img src="https://i.loli.net/2019/05/12/5cd7b069e734a.jpg" alt="Featured image of post Automate Image Processing for My Blog" />&lt;p>As you can see, my blog contains cover images. Every time I write an article I need to upload a cover image to the image server. However, the process is complicated and trivial. I need to crop the image to a certain proportion and resize and compress the image to reduce the loading time. Moreover, to put the photographer&amp;rsquo;s name on the image, I need to use other software. Therefore, I create two python scripts to automate the process.&lt;/p>
+>here&lt;/a>.&lt;/p></description></item><item><title>Automate Image Processing for My Blog</title><link>https://lijohnny.com/p/automate-image-processing-for-my-blog/</link><pubDate>Sat, 11 May 2019 22:28:30 +0000</pubDate><guid>https://lijohnny.com/p/automate-image-processing-for-my-blog/</guid><description>&lt;img src="https://i.loli.net/2019/05/12/5cd7b069e734a.jpg" alt="Featured image of post Automate Image Processing for My Blog" />&lt;blockquote>
+&lt;p>:warning:The old cript is &lt;code>DEPRECATED&lt;/code>. I switch to FastAPI, and updated the code &lt;a class="link" href="https://github.com/iamjohnnyli/blog-image-processing-automation" target="_blank" rel="noopener"
+>here&lt;/a>. The old code is now in &lt;a class="link" href="https://github.com/iamjohnnyli/blog-image-processing-automation/tree/V1.0" target="_blank" rel="noopener"
+>v1.0 Branch&lt;/a>.&lt;/p>
+&lt;/blockquote>
+&lt;p>As you can see, my blog contains cover images. Every time I write an article I need to upload a cover image to the image server. However, the process is complicated and trivial. I need to crop the image to a certain proportion and resize and compress the image to reduce the loading time. Moreover, to put the photographer&amp;rsquo;s name on the image, I need to use other software. Therefore, I create two python scripts to automate the process.&lt;/p>
 &lt;blockquote>
-&lt;p>For more information and code script, please go to my &lt;a class="link" href="https://github.com/iamjohnnyli/blog-image-processing-automation" target="_blank" rel="noopener"
+&lt;p>For more information and code script, please go to my &lt;a class="link" href="https://github.com/iamjohnnyli/blog-image-processing-automation/tree/V1.0" target="_blank" rel="noopener"
 >GitHub page&lt;/a>.&lt;/p>
 &lt;/blockquote>
 &lt;p>These scripts are for automating the process of cropping, resizing, adding author&amp;rsquo;s information, compressing, and uploading an image.&lt;/p>
@@ -507,24 +512,25 @@ Here is my solution.&lt;/p>
 >https://zh.wikipedia.org/wiki/V2EX&lt;/a> &lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>How to Build Consistent Development Environment through Docker</title><link>https://lijohnny.com/p/how-to-build-consistent-development-environment-through-docker/</link><pubDate>Wed, 20 Mar 2019 02:02:28 +0000</pubDate><guid>https://lijohnny.com/p/how-to-build-consistent-development-environment-through-docker/</guid><description>&lt;img src="https://i.loli.net/2019/04/27/5cc38cc0066e1.jpg" alt="Featured image of post How to Build Consistent Development Environment through Docker" />&lt;p>Data Analysis is not all about reports or visualization. The correctness and reproducibility are also important for scientific research. A consistent environment is critical for reproducibility. There are several ways to achieve that. However, I find out using Docker at any time can repeat the experiment in the same environment. It is easy to scale up and scale horizontally. For more information, you can click &lt;a class="link" href="https://www.docker.com/why-docker" target="_blank" rel="noopener"
->here&lt;/a>.&lt;/p>
+&lt;/section></description></item><item><title>Data Analysis with Docker</title><link>https://lijohnny.com/p/data-analysis-with-docker/</link><pubDate>Wed, 20 Mar 2019 02:02:28 +0000</pubDate><guid>https://lijohnny.com/p/data-analysis-with-docker/</guid><description>&lt;img src="https://i.loli.net/2019/04/27/5cc38cc0066e1.jpg" alt="Featured image of post Data Analysis with Docker" />&lt;p>Data Analysis is not all about reports or visualization. The correctness and reproducibility are also important for scientific research. A consistent environment is critical for reproducibility. There are several ways to achieve that. However, I find out using &lt;a class="link" href="%28https://www.docker.com/why-docker%29" >Docker&lt;/a> at any time can repeat the experiment in the same environment. It is easy to scale up and scale horizontally.&lt;/p>
 &lt;!-- raw HTML omitted -->
-&lt;h2 id="docker-file">Docker File&lt;/h2>
-&lt;p>A Dockerfile basically &amp;ldquo;tells&amp;rdquo; docker the way an image build. You can edit it to fit your daily usages.&lt;/p>
+&lt;p>My docker image is based on Ubuntu. It includes common Data Science tools such as Jupyter Notebook wiht Python 3 and R kernel. With the help of R Magic, I can run both Python and R in the same .ipynb file. To learn more about R Magic, you can click &lt;a class="link" href="https://www.datacamp.com/community/blog/jupyter-notebook-r?utm_source=adwords_ppc&amp;amp;utm_campaignid=1565261270&amp;amp;utm_adgroupid=67750485268&amp;amp;utm_device=c&amp;amp;utm_keyword=&amp;amp;utm_matchtype=b&amp;amp;utm_network=g&amp;amp;utm_adpostion=1t1&amp;amp;utm_creative=295208661496&amp;amp;utm_targetid=dsa-473406574235&amp;amp;utm_loc_interest_ms=&amp;amp;utm_loc_physical_ms=9033309&amp;amp;gclid=EAIaIQobChMIt5Xy39jq4AIVbiCtBh3FdQ4IEAAYASAAEgLEZ_D_BwE" target="_blank" rel="noopener"
+>here&lt;/a>.
+I also installed Nbextensions for Jupyter Notebook. For more information, you can click &lt;a class="link" href="https://github.com/ipython-contrib/jupyter_contrib_nbextensions" target="_blank" rel="noopener"
+>here&lt;/a>&lt;/p>
 &lt;blockquote>
-&lt;p>Please go to my &lt;a class="link" href="https://github.com/iamjohnnyli/data-analyst-notebook-docker" target="_blank" rel="noopener"
->GitHub Repository&lt;/a> to check and download latest file.&lt;/p>
+&lt;p>You can find my Dockerfile in my &lt;a class="link" href="https://github.com/iamjohnnyli/data-analyst-notebook-docker" target="_blank" rel="noopener"
+>GitHub Repository&lt;/a>.&lt;/p>
 &lt;/blockquote>
-&lt;h2 id="build-your-own-docker-image">Build YOUR OWN DOCKER IMAGE&lt;/h2>
-&lt;h3 id="install-docker">INSTALL DOCKER&lt;/h3>
+&lt;h2 id="how-to-use-my-dockerfile">HOW TO USE MY DOCKERFILE&lt;/h2>
+&lt;h3 id="install-docker">Install Docker&lt;/h3>
 &lt;p>The Docker community have an explicit tutorial about how to install Docker. Please check &lt;a class="link" href="https://www.docker.com/community-edition#/download" target="_blank" rel="noopener"
 >here&lt;/a>&lt;/p>
-&lt;h3 id="build-one-based-on-dockerfile">BUILD ONE BASED ON DOCKERFILE&lt;/h3>
+&lt;h3 id="build">Build&lt;/h3>
 &lt;p>In the terminal, direct to the folder that contains the dockerfile and run the following command:&lt;/p>
 &lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-sh" data-lang="sh">docker build -t data-analyst-notebook .
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>Don&amp;rsquo;t forget the &amp;ldquo;.&amp;rdquo; at the end. data-analyst-notebook is the name of the image. You can change to whatever you prefer.&lt;/p>
-&lt;h2 id="start-server">START SERVER&lt;/h2>
+&lt;h3 id="start-server">Start server&lt;/h3>
 &lt;p>I use following code to start server:&lt;/p>
 &lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-sh" data-lang="sh">docker run --rm -p 8888:8888 -e &lt;span class="nv">JUPYTER_ENABLE_LAB&lt;/span>&lt;span class="o">=&lt;/span>yes -v ~/:/home/jovyan/work data-analyst-notebook
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>There is more detailed instruction from &lt;a class="link" href="https://jupyter-docker-stacks.readthedocs.io/en/latest/" target="_blank" rel="noopener"
