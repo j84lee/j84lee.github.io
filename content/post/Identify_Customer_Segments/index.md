@@ -15,7 +15,7 @@ math: false
 license: 
 hidden: false
 comments: true
-draft: true
+
 ---
 
 This is one of the Udacity Data Scientist Nanodegree Project. This project aims to identify segments of the population from the core customer base for a mail-order sales company in Germany. Therefore, these segments can then be used to direct marketing campaigns towards audiences with the highest expected rate of returns.
