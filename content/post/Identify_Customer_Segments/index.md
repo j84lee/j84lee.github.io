@@ -5,17 +5,13 @@ author: Johnny Li
 date: 2021-03-12T21:42:22-08:00
 tags:
     - Python
-
 categories:
     - Data Analysis
     - Python
-keywards: 
+keywards: data analysis, python, pca, data cleaning, cleaning, encoding, one hot, scaling, dimensionality, reduction, clustering, kmeans,k-means, segments, target, customer, population, data, sklearn
 image: https://i.loli.net/2021/03/13/7dfc3OoaYZAnejX.jpg
 math: false
-license: 
 hidden: false
-comments: true
-
 ---
 
 This is one of the Udacity Data Scientist Nanodegree Project. This project aims to identify segments of the population from the core customer base for a mail-order sales company in Germany. Therefore, these segments can then be used to direct marketing campaigns towards audiences with the highest expected rate of returns.
