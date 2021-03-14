@@ -14,7 +14,7 @@ tags:
     - HTML
 categories:
   - Data
-  - Python
+  - R
 keywords: Python,R,Regression,detection,analysis, parsing, BeautifulSoup, spam, email
 description: Spam is still a common attack method. Most of the email services have spam filters that can help us block and filter out most of the emails with commercial, fraudulent and malicious content. The purpose of the project is to explore and analyze the email header to identify the features that can tell us which emails are malicious.
 
