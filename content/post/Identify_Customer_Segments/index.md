@@ -5,10 +5,19 @@ author: Johnny Li
 date: 2021-03-12T21:42:22-08:00
 tags:
     - Python
+    - Data Cleaning
+    - Data Analysis
+    - Machine Learning
+    - Encoding
+    - Scaling
+    - Dimension Reduction
+    - KMeans
+    - Clustering
+
 categories:
     - Data Analysis
     - Python
-keywards: data analysis, python, pca, data cleaning, cleaning, encoding, one hot, scaling, dimensionality, reduction, clustering, kmeans,k-means, segments, target, customer, population, data, sklearn
+keywards: data analysis, python, pca, data cleaning, cleaning, encoding, one hot, scaling, dimensionality reduction, clustering, kmeans,k-means, segments, target, customer, population, data, sklearn, machine learning, machinelearning
 image: https://i.loli.net/2021/03/13/7dfc3OoaYZAnejX.jpg
 math: false
 hidden: false

@@ -9,7 +9,8 @@ tags:
     - Python
     - Udacy
 categories:
-  - Data
+  - Data Analysis
+  - Python
 keywords: Machine Learning,SGD Classifier,AdaBoost,Logistic Regression,Python
 description: A project of using Machine Leaning to identify potential donors.
 image: https://i.loli.net/2019/05/30/5cef9192b167778174.jpg
