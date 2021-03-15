@@ -76,4 +76,4 @@ Udacity Data Scientist provided the starting code for this project.
 Udacity partners at Bertelsmann Arvato Analytics provided the data.
 
 
-[^**]: Cluster -1 is the group I add for checking the proportion of data that miss more than 30% information.
+[^**]: Cluster -1 is the group I added for checking the proportion of data that miss more than 30% information.
