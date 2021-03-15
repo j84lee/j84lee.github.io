@@ -7,7 +7,7 @@ author:
     display_name: Johnny Li
 
 # Change it to your Disqus shortname before using
-disqusShortname: j84lee-github-io
+disqusShortname: lijohnny
 
 # GA Tracking ID
 googleAnalytics: UA-136585559-1
@@ -54,7 +54,7 @@ params:
         provider: disqus
 
         utterances:
-            repo:
+            repo: iamjohnnyli/iamjohnnyli.github.io
             issueTerm: pathname
             label:
 
