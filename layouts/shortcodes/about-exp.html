@@ -33,10 +33,24 @@
     .timeline {
         padding-left: 30px !important;
     }
+    .com-timeline {
+        padding-left: 0px !important; 
     }
-    @media (min-width: 1518px){
+    }
+    @media (min-width: 1518px)and (max-width: 1919px){
     .timeline {
-        padding-left: 60px !important;
+        padding-left: 50px !important;
+    }
+    .com-timeline {
+        padding-left: 0px !important; 
+    }
+    }
+    @media (min-width: 1919px){
+    .timeline {
+        padding-left: 80px !important;
+    }
+    .com-timeline {
+        padding-left: 50px !important; 
     }
     }
     
@@ -53,7 +67,7 @@
         position: relative;
     }
     .com{
-        padding: 30px;
+        padding: 30px 30px 30px 0px;
         position: relative; 
     }
     .timeline {
@@ -113,7 +127,7 @@
         <div class="com">
 
  
-            <div class="timeline fadeIn animated" style="visibility: visible;">
+            <div class="timeline com-timeline fadeIn animated" style="visibility: visible;">
                 <div class="content">
                     <span class="time">2019 - Present</span>
                     <h3 class="title">Data Analysis PM</h3>
@@ -122,7 +136,7 @@
             </div>
 
  
-            <div class="timeline fadeIn animated" style="visibility: visible; animation-delay: 0.2s;">
+            <div class="timeline com-timeline fadeIn animated" style="visibility: visible; animation-delay: 0.2s;">
                 <div class="content">
                     <span class="time">2013 - 2018</span>
                     <h3 class="title">Product Manager</h3>
@@ -130,7 +144,7 @@
                 </div>
             </div>
 
-            <div class="timeline fadeIn animated" style="visibility: visible; animation-delay: 0.4s;">
+            <div class="timeline com-timeline fadeIn animated" style="visibility: visible; animation-delay: 0.4s;">
                 <div class="content">
                     <span class="time">2011-2012</span>
                     <h3 class="title">Interaction Designer</h3>
