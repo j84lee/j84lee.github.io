@@ -117,7 +117,7 @@ menu:
           pre: user
 
         - identifier: archives
-          name: Archives
+          name: Categories
           url: archives
           weight: -70
           pre: archives
