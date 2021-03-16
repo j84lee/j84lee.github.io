@@ -12,7 +12,7 @@ categories:
 keywords: [Python,Algorithms,Coding Challenge]
 date: 2019-04-06 14:35:05
 image: https://i.loli.net/2019/04/27/5cc38cc539c01.jpg
-
+math: true
 ---
 
 On April 1st, one of the post on [v2ex](https://www.v2ex.com/t/550870) (An online community of developers and designers in China[^1]) become viral. The [post](https://www.v2ex.com/t/550870) title is "Seeking Dates" and it is posted on April 1st, so most reactions of this post are pointing out that this is the "new trap" of the recruiters.
