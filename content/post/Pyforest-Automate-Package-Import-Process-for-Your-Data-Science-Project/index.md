@@ -1,5 +1,5 @@
 ---
-title: Pyforest - Automate Package Import Process in Your Data Science Project
+title: Pyforest - Automate Package Import Process for Your Data Science Project
 description: 
 author: Johnny Li
 date: 2021-03-19T19:56:44-07:00
@@ -77,6 +77,6 @@ pyforest.active_imports()
 This is my daily dose of Python tricks. I hope this post can help you. I strongly recommend you try [cookiecutter](https://github.com/iamjohnnyli/cookiecutter_data_analysis) and [Pyforest](https://github.com/8080labs/pyforest) to automate your Data Science/Analysis workflow.
 
 ------------------------
-{{<fin "pyforest-automate-package-import-process-in-your-data-science-project" "Pyforest - Automate Package Import Process in Your Data Science Project">}}
+{{<fin "pyforest-automate-package-import-process-for-your-data-science-project" "Pyforest - Automate Package Import Process for Your Data Science Project">}}
 
 ------------------------
