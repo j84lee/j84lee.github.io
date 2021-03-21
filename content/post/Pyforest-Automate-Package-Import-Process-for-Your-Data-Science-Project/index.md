@@ -6,6 +6,17 @@ date: 2021-03-19T19:56:44-07:00
 tags:
     - Python
     - Data Analysis
+    - Data Science
+    - Jupyter
+    - Jupyter Notebook
+    - Jupyter Lab
+    - import
+    - Library
+    - Package
+    - Pyforest
+    - Cookiecutter
+    - Automation
+    - Workflow
 
 categories:
     - Blog

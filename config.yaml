@@ -144,5 +144,10 @@ markup:
     highlight:
         noClasses: false
 
+enableRobotsTXT: true
+canonifyURLs: true
 
-
+sitemap:
+  changefreq: daily
+  filename: sitemap.xml
+  priority: 0.5

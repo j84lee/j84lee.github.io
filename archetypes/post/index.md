@@ -17,3 +17,10 @@ draft: true
 mermaid: false
 ---
 
+
+
+
+------------------------
+{{<fin "{{ lower .Name}}"  "{{ replace .Name "-" " " | title }}">}}
+
+------------------------
