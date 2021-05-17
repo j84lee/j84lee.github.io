@@ -22,7 +22,7 @@ categories:
     - Python
     - Tutorial
 keywords: python, data analysis, data science, jupyter, ipython, jupyter lab, jupyter notebook, import, library, package, pyforest, cookiecutter, automation, workflow
-image: https://i.loli.net/2021/03/21/j4dzCfs1YINnUeP.jpg
+image: j4dzCfs1YINnUeP.jpg
 math: false
 license: 
 hidden: false

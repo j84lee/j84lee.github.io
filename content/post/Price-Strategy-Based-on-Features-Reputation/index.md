@@ -11,7 +11,7 @@ categories:
     - Machine Learning
     - Python
 keywords: 
-image: https://i.loli.net/2021/03/15/4BxDCOzgPulU89Y.jpg 
+image: 4BxDCOzgPulU89Y.jpg 
 math: false
 license: 
 hidden: false
@@ -27,9 +27,9 @@ My goal is to extract features from reviews, identify each feature's opinion, qu
 The main techniques I used are:
 
 1. Web Clawing: Get customer reviews from Amazon.
-1. Nature Language Processing: Identify product features.
-1. Sentiment Analysis: Identify polarity of opinions regarding product features.
-1. Linear Regression: Regression analysis for opinions of the features and the price.
+2. Nature Language Processing: Identify product features.
+3. Sentiment Analysis: Identify polarity of opinions regarding product features.
+4. Linear Regression: Regression analysis for opinions of the features and the price.
 
 
 >The ```Jupyter Notebook``` goes along with this post **will** be available in my Repo on [my Github]() soon.

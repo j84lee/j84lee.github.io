@@ -11,7 +11,7 @@ categories:
   - Coding Challenge
 keywords: [Python,Algorithms,Coding Challenge]
 date: 2019-04-06 14:35:05
-image: https://i.loli.net/2019/04/27/5cc38cc539c01.jpg
+image: 5cc38cc539c01.jpg
 math: true
 ---
 

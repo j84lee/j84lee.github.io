@@ -13,7 +13,7 @@ categories:
   - Python
 keywords: Machine Learning,SGD Classifier,AdaBoost,Logistic Regression,Python
 description: A project of using Machine Leaning to identify potential donors.
-image: https://i.loli.net/2019/05/30/5cef9192b167778174.jpg
+image: 5cef9192b167778174.jpg
 ---
 [![](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://lijohnny.com)  [![](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)  [![](https://img.shields.io/badge/Kaggle-Project-blue.svg)]() 
 

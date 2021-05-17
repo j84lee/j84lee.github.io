@@ -13,7 +13,7 @@ tags:
     - Tutorial
     - HTML
 
-image: https://i.loli.net/2019/05/12/5cd7d789264a1.jpg
+image: 5cd7d789264a1.jpg
 ---
 
 In this [tutorial](https://github.com/iamjohnnyli/web-crawler-tutorial/tree/master/scrapy_craigslist) I use [Scrapy](https://scrapy.org/) to collect data from Craigslist.com. Specifically, the data under craigslist.org/Seattle/housing/vacation rentals. You can find the page under the link: [https://seattle.craigslist.org/d/vacation‐rentals/search/vac](https://seattle.craigslist.org/d/vacation‐rentals/search/vac)

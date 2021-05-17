@@ -19,7 +19,7 @@ categories:
     - Machine Learning
     - Python
 keywords: data analysis, python, pca, data cleaning, cleaning, encoding, one hot, scaling, dimensionality reduction, clustering, kmeans,k-means, segments, target, customer, population, data, sklearn, machine learning, machinelearning
-image: https://i.loli.net/2021/03/13/7dfc3OoaYZAnejX.jpg
+image: 7dfc3OoaYZAnejX.jpg
 math: false
 hidden: false
 ---
@@ -29,10 +29,10 @@ This is one of the Udacity Data Scientist Nanodegree Project. This project aims 
 The techniques I used in this project include:  
 
 1. Data cleaning  
-1. Encoding and processing mixed-type feature  
-1. Feature Scaling and Dimensionality Reduction
-1. Clustering
-1. Performance improvement with OpenBLAS
+2. Encoding and processing mixed-type feature  
+3. Feature Scaling and Dimensionality Reduction
+4. Clustering
+5. Performance improvement with OpenBLAS
 
 > You can find the full analysis in [my GitHub repo](https://github.com/iamjohnnyli/identify-customer-segments/blob/main/Identify_Customer_Segments.ipynb).
 

@@ -14,7 +14,7 @@ categories:
   - Python
 keywords: python,automation,api,tinypng,SM.MS,blog,automator
 description: This is an introduction to my Python Script that automates image processing. 
-image: https://i.loli.net/2019/05/12/5cd7b069e734a.jpg
+image: 5cd7b069e734a.jpg
 
 ---
 

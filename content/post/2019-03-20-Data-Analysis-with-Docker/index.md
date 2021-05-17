@@ -8,7 +8,7 @@ tags:
 categories:
   - Data
   - Dev Env
-image: https://i.loli.net/2019/04/27/5cc38cc0066e1.jpg
+image: 5cc38cc0066e1.jpg
 description: Data Analysis is not all about reports or visualization. The correctness and reproducibility are also important for scientific research. A consistent environment is critical for reproducibility. There are several ways to achieve that. However, I find out using Docker at any time can repeat the experiment in the same environment. It is easy to scale up and scale horizontally. 
 ---
 
