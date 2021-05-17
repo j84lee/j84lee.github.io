@@ -16,14 +16,15 @@ tags:
 
 categories:
     - Data Analysis
+    - Machine Learning
     - Python
-keywards: data analysis, python, pca, data cleaning, cleaning, encoding, one hot, scaling, dimensionality reduction, clustering, kmeans,k-means, segments, target, customer, population, data, sklearn, machine learning, machinelearning
+keywords: data analysis, python, pca, data cleaning, cleaning, encoding, one hot, scaling, dimensionality reduction, clustering, kmeans,k-means, segments, target, customer, population, data, sklearn, machine learning, machinelearning
 image: https://i.loli.net/2021/03/13/7dfc3OoaYZAnejX.jpg
 math: false
 hidden: false
 ---
 
-This is one of the Udacity Data Scientist Nanodegree Project. This project aims to identify segments of the population from the core customer base for a mail-order sales company in Germany. Therefore, these segments can then be used to direct marketing campaigns towards audiences with the highest expected rate of returns.
+This is one of the Udacity Data Scientist Nanodegree Project. This project aims to use unsupervised learning techniques to identify segments of the population from the core customer base for a mail-order sales company in Germany. Therefore, these segments can then be used to direct marketing campaigns towards audiences with the highest expected rate of returns.
 
 The techniques I used in this project include:  
 
@@ -69,6 +70,11 @@ Comparing 2 segments, we can find there are some key differences. For example:
 - Type of Building: Most builds in cluster 2 are residential build.
 - Social status: Most people in cluster 2 are top earners and most people in cluster 3 are house owners.
 
+## 
+
+```
+conda create -y -n p38openblas -c conda-forge "python=3.8" scipy "blas=*=*openblas"
+```
 
 ## Licensing and Acknowledgements
 

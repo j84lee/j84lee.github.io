@@ -1,6 +1,6 @@
 ---
 title: Pyforest - Automate Package Import Process for Your Data Science Project
-description: 
+description: Test
 author: Johnny Li
 date: 2021-03-19T19:56:44-07:00
 tags:
@@ -17,12 +17,11 @@ tags:
     - Cookiecutter
     - Automation
     - Workflow
-
 categories:
     - Blog
     - Python
     - Tutorial
-keywards: python, data analysis, data science, jupyter, ipython, jupyter lab, jupyter notebook. import, library, package, pyforest, cookiecutter, automation, workflow
+keywords: python, data analysis, data science, jupyter, ipython, jupyter lab, jupyter notebook, import, library, package, pyforest, cookiecutter, automation, workflow
 image: https://i.loli.net/2021/03/21/j4dzCfs1YINnUeP.jpg
 math: false
 license: 

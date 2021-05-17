@@ -1,6 +1,8 @@
 baseurl: https://lijohnny.com
 languageCode: en-us
-theme: hugo-theme-stack
+theme: 
+    - hugo-theme-stack
+    - hugo-cite
 paginate: 10
 title: Johnny's Blog
 author:
@@ -150,4 +152,4 @@ canonifyURLs: true
 sitemap:
   changefreq: daily
   filename: sitemap.xml
-  priority: 1
+  priority: 0.5

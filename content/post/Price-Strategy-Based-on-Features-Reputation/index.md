@@ -10,7 +10,7 @@ categories:
     - Data Analysis
     - Machine Learning
     - Python
-keywards: 
+keywords: 
 image: https://i.loli.net/2021/03/15/4BxDCOzgPulU89Y.jpg 
 math: false
 license: 
