@@ -1,6 +1,6 @@
 ---
 title: Pyforest - Automate Package Import Process for Your Data Science Project
-description: A tool can speed up your dtat analysis
+description: A tool can speed up your data analysis
 author: Johnny Li
 date: 2021-03-19T19:56:44-07:00
 tags:
