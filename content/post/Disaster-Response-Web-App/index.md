@@ -24,7 +24,7 @@ categories:
     - Python
 
 keywords: Python, ETL Pipeline,Machine Learning Pipeline,BOW,TFIDF,KNN,Random Forest,Gridsearch,Flask,Web App,HTML Template,Multilabel Classification,Multioutput Classification,SQLite,sklearn,machinelearning
-image: DyBtdQ9baFC43mo.jpg
+image: ArpiP6q2msCtGnU.jpg
 math: false
 license: 
 hidden: false
